@@ -26,7 +26,7 @@ class Check extends React.Component {
                         </p>
                         <p>
                             Оператор свяжется с Вами с официальной почты Акции
-                            gastrotour@thediversity.ru для уточнения деталей по вручению приза в
+                            winterseasonpromo@yandex.ru для уточнения деталей по вручению приза в
                             течение 5 рабочих дней.
                         </p>
                         <p>
