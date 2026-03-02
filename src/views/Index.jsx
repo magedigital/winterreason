@@ -96,6 +96,9 @@ class Index extends React.Component {
     getStep() {
         const { user, authIsError } = this.props;
 
+        console.log(user);
+        console.log(authIsError);
+
         if (!user || authIsError) {
             return 'error';
         }
