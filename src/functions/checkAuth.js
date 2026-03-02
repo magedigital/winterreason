@@ -64,6 +64,8 @@ export default async function checkAuth(start = false, status) {
             resultUser.status = status;
         }
 
+        console.log(resultUser, 'resultUser');
+
         if (prevUser && resultUser.extraDataRequired) {
             const { extraDataRequired } = prevUser;
 
@@ -81,7 +83,7 @@ export default async function checkAuth(start = false, status) {
         }
 
         // console.log(resultUser);
-        await dispatcher({ type: 'user', data: resultUser });
+        await dispatcher({ type: 'user', data: { ...resultUser } });
     } catch (error) {
         console.log(error);
         await dispatcher({ type: 'authIsError', data: true });
