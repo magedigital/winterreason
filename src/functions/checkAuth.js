@@ -83,6 +83,7 @@ export default async function checkAuth(start = false, status) {
         // console.log(resultUser);
         await dispatcher({ type: 'user', data: resultUser });
     } catch (error) {
+        console.log(error);
         await dispatcher({ type: 'authIsError', data: true });
     }
 }

@@ -21,7 +21,7 @@ class Error extends React.Component {
                     </div>
                     <div className="form__info">
                         <p>Если у вас возникли вопросы:</p>
-                        <p>gastrotour@thediversity.ru</p>
+                        <p>winterseasonpromo@yandex.ru</p>
                     </div>
                 </div>
             </>
