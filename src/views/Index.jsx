@@ -21,7 +21,9 @@ class Index extends React.Component {
     setStep(status, error) {
         const user = { ...this.props.user };
 
-        user.status = this.keys[status];
+        if (this.keys[status]) {
+            user.status = this.keys[status];
+        }
 
         this.setState({ error }, () => {
             dispatcher({ type: 'user', data: user });
@@ -95,9 +97,6 @@ class Index extends React.Component {
 
     getStep() {
         const { user, authIsError } = this.props;
-
-        console.log(user?.status);
-        console.log(authIsError);
 
         if (!user || authIsError) {
             return 'error';
