@@ -230,7 +230,9 @@ class Name extends FormPage {
             <div ref={this.parent} className="form">
                 {type === 'anket' && (
                     <div className="form__head">
-                        <h1 className="form__headTitle">Поздравляем с выигрышем {prize?.title}!</h1>
+                        <h1 className="form__headTitle">
+                            Поздравляем с выигрышем «{prize?.title}»!
+                        </h1>
                         <h1 className="form__headTitle _notBottom">
                             Для получения приза, пожалуйста, заполните все поля и приложите
                             необходимые документы
@@ -256,7 +258,7 @@ class Name extends FormPage {
                 )}
                 {type === 'rest' && (
                     <div className="form__head">
-                        <h1 className="form__headTitle _notBottom">Выберите ресторан</h1>
+                        <h1 className="form__headTitle _notBottom">Выберите желаемую дату поездки</h1>
                     </div>
                 )}
                 {type === 'guest' && (

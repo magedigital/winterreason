@@ -14,6 +14,8 @@ class Check extends React.Component {
     }
 
     render() {
+        const { user } = this.props;
+
         return (
             <>
                 <div ref={this.parent} className="form">
@@ -27,11 +29,11 @@ class Check extends React.Component {
                         <p>
                             Оператор свяжется с Вами с официальной почты Акции
                             winterseasonpromo@yandex.ru для уточнения деталей по вручению приза в
-                            течение 5 рабочих дней.
+                            течение 2 рабочих дней.
                         </p>
                         <p>
                             Если в данных будут обнаружены ошибки, мы пришлём Вам уведомление на
-                            Вашу электронную почту
+                            Вашу электронную почту {user?.personal?.email}
                         </p>
                     </div>
                 </div>
